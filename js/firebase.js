@@ -1,6 +1,6 @@
 let firebaseConfig = {
     // Enter your firebase credentials
-    apiKey: "AIzaSyD3_JAllbw-W59SMWhuYpie_VYYcodjk8o",
+    
     authDomain: "blogism-6651a.firebaseapp.com",
     projectId: "blogism-6651a",
     storageBucket: "blogism-6651a.appspot.com",
