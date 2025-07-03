@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>blogISM : Homepage</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;1,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/home.css">
+
+</head>
+<body>
+
+    <nav class="nav">
+        <div class="container">
+            <div class="logo">
+                <a href="/">blogISM</a>
+            </div>
+            <div id="mainListDiv" class="main_list">
+                <ul class="navlinks links-container">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/editor">Editor</a></li>
+                    <!-- <li><a href="/admin">Login</a></li>
+                    <li><a href="#">Contact</a></li> -->
+                </ul>
+            </div>
+            <span class="navTrigger">
+                <i></i>
+                <i></i>
+                <i></i>
+            </span>
+        </div>
+    </nav>
+
+   <!-- Jquery needed -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="js/scripts.js"></script>
+
+<!-- Function used to shrink nav bar removing paddings and adding black background -->
+    <script>
+        $(window).scroll(function() {
+            if ($(document).scrollTop() > 50) {
+                $('.nav').addClass('affix');
+                console.log("OK");
+            } else {
+                $('.nav').removeClass('affix');
+            }
+        });
+    </script>
+
+    <header class="header">
+        <div class="content">
+            <h1 class="heading">
+                <!-- <span class="small"></span> -->
+                <span class="no-fill">blogISM</span>
+            </h1> <br><br><br><br>
+            <div class="buttons">
+                <a href="/editor" style="text-decoration: none;">
+                    <button class="btnn btn-4">Write A Blog</button>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- blog section -->
+    <section class="blogs-section">
+        <!-- <div class="blog-card">
+            <img src="img/header.png" class="blog-image" alt="">
+            <h1 class="blog-title">Lorem ipsum dolor sit amet consectetur.</h1>
+            <p class="blog-overview">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt incidunt fugiat quos porro repellat harum. Adipisci tempora corporis rem cum.</p>
+            <a href="/" class="btn dark">read</a>
+        </div> -->
+    </section>
+    <br>
+    <br>
+    <div class="footer">&copy; 2022 shivali0810</div>
+
+    <script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-firestore.js"></script>
+
+    <script src="js/firebase.js"></script>
+    <script src="js/home.js"></script>
+    <script src="js/nav.js"></script>
+    
+</body>
+</html>

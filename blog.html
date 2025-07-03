@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>blogISM : </title>
+
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/editor.css">
+    <link rel="stylesheet" href="css/blog.css">
+
+</head>
+<body>
+
+    <nav class="nav">
+        <div class="container">
+            <div class="logo">
+                <a href="/">blogISM</a>
+            </div>
+            <div id="mainListDiv" class="main_list">
+                <ul class="navlinks links-container">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/editor">Editor</a></li>
+                    <!-- <li><a href="/admin">Login</a></li>
+                    <li><a href="#">Contact</a></li> -->
+                </ul>
+            </div>
+            <span class="navTrigger">
+                <i></i>
+                <i></i>
+                <i></i>
+            </span>
+        </div>
+    </nav>
+
+   <!-- Jquery needed -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="js/scripts.js"></script>
+
+<!-- Function used to shrink nav bar removing paddings and adding black background -->
+    <script>
+        $(window).scroll(function() {
+            if ($(document).scrollTop() > 50) {
+                $('.nav').addClass('affix');
+                console.log("OK");
+            } else {
+                $('.nav').removeClass('affix');
+            }
+        });
+    </script>
+    
+    <div class="banner"></div>
+
+    <div class="blog">
+        <h1 class="title"></h1>
+        <p class="published"><span>published at - </span></p>
+        <div class="article">
+            
+        </div>
+    </div>
+
+    <h1 class="sub-heading">Read more</h1>
+
+    <!-- blog section -->
+    <section class="blogs-section">
+        <!-- <div class="blog-card">
+            <img src="img/header.png" class="blog-image" alt="">
+            <h1 class="blog-title">Lorem ipsum dolor sit amet consectetur.</h1>
+            <p class="blog-overview">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt incidunt fugiat quos porro repellat harum. Adipisci tempora corporis rem cum.</p>
+            <a href="/" class="btn dark">read</a>
+        </div> -->
+    </section>
+
+    <script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-firestore.js"></script>
+
+    <script src="js/firebase.js"></script>
+    <script src="js/home.js"></script>
+    <script src="js/blog.js"></script>
+    <script src="js/nav.js"></script>
+    
+</body>
+</html>
